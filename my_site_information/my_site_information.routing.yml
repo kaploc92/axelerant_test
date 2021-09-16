@@ -1,0 +1,9 @@
+my_site_information.my_page_json:
+  path: 'page_json/{siteapikey}/{nid}'
+  defaults:
+    _controller: '\Drupal\my_site_information\Controller\MyPageController::myPageJson'
+    _title: 'My page json'
+  requirements:
+    _permission: 'access content'
+    _role: 'administrator'
+  methods: ['GET']
